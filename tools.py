@@ -44,5 +44,36 @@ tools = [
             },
             "required": ["order_id"]
         }
+    },
+    {
+        "name": "process_refund",
+        "description": (
+            "Process a refund to the customer's original payment method. "
+            "Requires a verified customer ID and a valid order ID. "
+            "Only use this tool after get_customer has successfully confirmed "
+            "the customer's identity. Do not call this tool before identity "
+            "has been verified — it will fail and you will need to verify first."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "customer_id": {
+                    "type": "string",
+                    "description": (
+                        "The verified customer ID returned by get_customer "
+                        "(e.g. 'CUST-4492'). Must match the currently verified customer."
+                    )
+                },
+                "order_id": {
+                    "type": "string",
+                    "description": "The order ID to refund (e.g. 'ORD-8821')."
+                },
+                "amount": {
+                    "type": "number",
+                    "description": "The refund amount in USD."
+                }
+            },
+            "required": ["customer_id", "order_id", "amount"]
+        }
     }
 ]
