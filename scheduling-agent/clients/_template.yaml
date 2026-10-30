@@ -1,0 +1,21 @@
+# Copy to <client-id>.yaml (or to <Client Folder>/client.yaml inside your existing client folder).
+# Files starting with "_" are ignored.
+id: client-id                      # short, lowercase, no spaces
+customer: Client Name
+timezone: America/Chicago          # IANA name; aliases like "CT" also work
+preferred_channel: email           # email | slack | teams
+automation: ask_then_send          # draft_only | ask_then_send | auto_send  (start conservative, loosen per client)
+contacts:
+  - name: First Last
+    email: first.last@client.com
+    role: Project lead
+    slack: "@first"                # optional, for Slack-channel clients
+    timezone: null                 # optional per-person override
+meeting_defaults:
+  duration_minutes: 30
+  subject_template: "{customer} <> {owner_company}: {topic}"
+  internal_attendees: []           # colleagues always invited, e.g. ["pm@yourcompany.com"]
+  client_working_hours: "09:00-17:00"   # in the CLIENT's zone; null to ignore
+  online_meeting_provider: teamsForBusiness
+notes: |
+  Anything useful for the assistant: "prefers mornings", "never Fridays", "CC their PM".

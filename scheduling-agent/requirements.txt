@@ -1,0 +1,14 @@
+# Core (always)
+pydantic>=2.6
+pyyaml>=6.0
+tzdata>=2024.1          # Windows has no system IANA database
+
+# MCP server (optional; only for `python -m scheduler.mcp_server`)
+mcp>=2.0
+
+# Direct Microsoft Graph provider (optional; only for SCHEDULER_PROVIDER=graph)
+# msal>=1.39
+# requests>=2.32
+
+# Tests
+pytest>=8

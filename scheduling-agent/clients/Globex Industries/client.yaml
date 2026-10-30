@@ -1,0 +1,13 @@
+# Folder-style profile: lives inside an existing client folder. id/customer derive from the folder name if omitted.
+timezone: Europe/London
+preferred_channel: slack
+contacts:
+  - name: Oliver Hughes
+    email: oliver.hughes@globex.example
+    slack: "@oliver"
+    role: Program manager
+meeting_defaults:
+  duration_minutes: 45
+  client_working_hours: "09:00-17:30"
+notes: |
+  UK based. Avoid their lunch (12:30-13:30 UK). Shared Slack Connect channel #globex-yourco.

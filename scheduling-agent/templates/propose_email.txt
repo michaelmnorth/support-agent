@@ -1,0 +1,9 @@
+Hi {first_name},
+
+Happy to get this on the calendar. Here are a few times that work on my end for {topic} ({duration} min). Times are in {client_zone}, with {owner_zone} in parentheses:
+
+{options}
+
+If none of those work, send over a couple of windows that do and I will make it fit. Once you pick one I will send a Teams invite.
+
+{signoff}

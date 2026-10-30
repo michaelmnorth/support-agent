@@ -1,0 +1,36 @@
+# Owner preferences. Edit freely; every value has a sensible default if removed.
+owner:
+  name: Michael North
+  email: michael@yourcompany.com        # TODO: real work address
+  company: Your Company                 # used in meeting subjects
+  timezone: America/New_York
+
+# Per weekday, ranges in the owner's zone. Several ranges per day are fine. Empty list = no meetings.
+working_hours:
+  monday:    ["09:00-17:00"]
+  tuesday:   ["09:00-17:00"]
+  wednesday: ["09:00-17:00"]
+  thursday:  ["09:00-17:00"]
+  friday:    ["09:00-16:00"]
+  saturday:  []
+  sunday:    []
+
+scheduling:
+  buffer_minutes: 30              # never within 30 min of any meeting, either side
+  slot_granularity_minutes: 30    # offer :00 and :30 starts
+  default_duration_minutes: 30
+  min_lead_time_hours: 24         # nothing sooner than this from "now"
+  lookahead_days: 7
+  max_options: 4                  # how many times to offer
+  max_per_day: 2
+  min_gap_between_options_hours: 2
+  treat_tentative_as_busy: true
+  daily_blocks: ["12:00-13:00"]   # lunch, owner zone; delete to allow lunch meetings
+  skip_dates: []                  # ["2026-11-26", "2026-11-27"]
+
+response:
+  email_signoff: "Thanks,\nMichael"
+  slack_signoff: ""
+  list_bullet: "•"
+  show_both_zones: true
+  lead_with_client_zone: true     # client's zone first, owner's in parentheses

@@ -1,0 +1,19 @@
+id: acme-corp
+customer: Acme Corp
+timezone: America/Los_Angeles
+preferred_channel: email
+contacts:
+  - name: Jane Doe
+    email: jane.doe@acme.example
+    role: Director of Operations
+  - name: Raj Patel
+    email: raj.patel@acme.example
+    role: IT lead
+meeting_defaults:
+  duration_minutes: 30
+  subject_template: "Acme <> {owner_company}: {topic}"
+  internal_attendees: []
+  client_working_hours: "08:30-17:00"
+  online_meeting_provider: teamsForBusiness
+notes: |
+  Jane prefers mornings her time. Raj joins anything infrastructure-related.

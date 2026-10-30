@@ -1,0 +1,16 @@
+{
+  "_comment": "Week of Mon 2026-11-02 (US DST ended Sun 2026-11-01, so ET = UTC-5 here). Times are UTC. Used by the mock provider for demos.",
+  "events": [
+    {"start": "2026-11-02T15:00:00+00:00", "end": "2026-11-02T16:00:00+00:00", "subject": "Team standup", "show_as": "busy"},
+    {"start": "2026-11-02T19:00:00+00:00", "end": "2026-11-02T20:00:00+00:00", "subject": "Client call: Initech", "show_as": "busy"},
+    {"start": "2026-11-03T14:00:00+00:00", "end": "2026-11-03T14:30:00+00:00", "subject": "1:1 with manager", "show_as": "busy"},
+    {"start": "2026-11-03T18:00:00+00:00", "end": "2026-11-03T19:00:00+00:00", "subject": "Maybe: vendor demo", "show_as": "tentative"},
+    {"start": "2026-11-03T20:30:00+00:00", "end": "2026-11-03T21:30:00+00:00", "subject": "Steering committee", "show_as": "busy"},
+    {"start": "2026-11-04T05:00:00+00:00", "end": "2026-11-05T05:00:00+00:00", "subject": "Focus day (reminder)", "show_as": "free", "is_all_day": true},
+    {"start": "2026-11-04T16:00:00+00:00", "end": "2026-11-04T17:00:00+00:00", "subject": "Design review", "show_as": "busy"},
+    {"start": "2026-11-05T14:00:00+00:00", "end": "2026-11-05T17:00:00+00:00", "subject": "Workshop", "show_as": "busy"},
+    {"start": "2026-11-06T05:00:00+00:00", "end": "2026-11-07T05:00:00+00:00", "subject": "PTO", "show_as": "oof", "is_all_day": true},
+    {"start": "2026-11-09T15:00:00+00:00", "end": "2026-11-09T16:00:00+00:00", "subject": "Team standup", "show_as": "busy"},
+    {"start": "2026-11-10T14:00:00+00:00", "end": "2026-11-10T14:30:00+00:00", "subject": "1:1 with manager", "show_as": "busy"}
+  ]
+}
