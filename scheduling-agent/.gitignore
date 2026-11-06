@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+msal_cache.bin
+.env
+busy.json
+clients/*/scheduling-log.md

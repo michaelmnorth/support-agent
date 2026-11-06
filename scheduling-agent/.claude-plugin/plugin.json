@@ -1,0 +1,7 @@
+{
+  "name": "scheduling-assistant",
+  "version": "0.1.0",
+  "description": "Calendar scheduling assistant: reads Outlook via the Microsoft 365 connector, computes conflict-free options with a 30-minute buffer and correct time zones, drafts replies, and books Teams invites.",
+  "author": { "name": "Michael North" },
+  "keywords": ["scheduling", "calendar", "outlook", "teams", "slack"]
+}

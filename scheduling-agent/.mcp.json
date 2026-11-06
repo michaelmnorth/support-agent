@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "scheduler": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "scheduler.mcp_server"],
+      "cwd": "${CLAUDE_PLUGIN_ROOT}",
+      "env": {
+        "SCHEDULER_HOME": "${CLAUDE_PLUGIN_ROOT}",
+        "SCHEDULER_PROVIDER": "${SCHEDULER_PROVIDER:-none}",
+        "SCHEDULER_CLIENTS_DIR": "${SCHEDULER_CLIENTS_DIR:-${CLAUDE_PLUGIN_ROOT}/clients}"
+      }
+    }
+  }
+}
